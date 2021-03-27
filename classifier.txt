@@ -1,0 +1,153 @@
+
+--------------- Mushroom Decision Tree ---------------
+5 split (4208,3916,1) on values d, i, c, t, _, k, e, y, s, (, [, ', l, ', ,,  , ', p, ', ,,  , ', s, ', ,,  , ', a, ', ,,  , ', o, d, o, r, ', ,,  , ', m, ', ,,  , ', y, ', ,,  , ', c, ', ,,  , ', f, ', ,,  , ', n, ', ], )
+l -> e is predicted
+p -> p is predicted
+s -> p is predicted
+a -> e is predicted
+odor -> edible is predicted
+m -> p is predicted
+y -> p is predicted
+c -> p is predicted
+f -> p is predicted
+n -> 20 split (3408,120,0) on values d, i, c, t, _, k, e, y, s, (, [, ', s, p, o, r, e, -, p, r, i, n, t, -, c, o, l, o, r, ', ,,  , ', b, ', ,,  , ', k, ', ,,  , ', w, ', ,,  , ', y, ', ,,  , ', h, ', ,,  , ', u, ', ,,  , ', o, ', ,,  , ', r, ', ,,  , ', n, ', ], )
+    spore-print-color -> e is predicted
+    b -> e is predicted
+    k -> e is predicted
+    w -> 22 split (576,48,0) on values d, i, c, t, _, k, e, y, s, (, [, ', l, ', ,,  , ', p, ', ,,  , ', m, ', ,,  , ', w, ', ,,  , ', h, a, b, i, t, a, t, ', ,,  , ', d, ', ,,  , ', u, ', ,,  , ', g, ', ], )
+        l -> 3 split (48,16,0) on values d, i, c, t, _, k, e, y, s, (, [, ', e, ', ,,  , ', p, ', ,,  , ', b, ', ,,  , ', c, a, p, -, c, o, l, o, r, ', ,,  , ', w, ', ,,  , ', y, ', ,,  , ', u, ', ,,  , ', c, ', ,,  , ', r, ', ,,  , ', g, ', ,,  , ', n, ', ], )
+            e -> e is predicted
+            p -> e is predicted
+            b -> e is predicted
+            cap-color -> e is predicted
+            w -> p is predicted
+            y -> p is predicted
+            u -> e is predicted
+            c -> e is predicted
+            r -> e is predicted
+            g -> e is predicted
+            n -> e is predicted
+        p -> e is predicted
+        m -> e is predicted
+        w -> e is predicted
+        habitat -> e is predicted
+        d -> 21 split (8,32,0) on values d, i, c, t, _, k, e, y, s, (, [, ', a, ', ,,  , ', y, ', ,,  , ', p, o, p, u, l, a, t, i, o, n, ', ,,  , ', v, ', ,,  , ', c, ', ,,  , ', s, ', ,,  , ', n, ', ], )
+            a -> p is predicted
+            y -> e is predicted
+            population -> p is predicted
+            v -> p is predicted
+            c -> p is predicted
+            s -> p is predicted
+            n -> p is predicted
+        u -> e is predicted
+        g -> e is predicted
+    y -> e is predicted
+    h -> e is predicted
+    u -> e is predicted
+    o -> e is predicted
+    r -> p is predicted
+    n -> e is predicted
+
+--------------- Pruned Mushroom Decision Tree ---------------
+5 Chi2=15785.670 split (4208,3916,1) on values d, i, c, t, _, k, e, y, s, (, [, ', l, ', ,,  , ', p, ', ,,  , ', s, ', ,,  , ', a, ', ,,  , ', o, d, o, r, ', ,,  , ', m, ', ,,  , ', y, ', ,,  , ', c, ', ,,  , ', f, ', ,,  , ', n, ', ], )
+l -> e is predicted
+p -> p is predicted
+s -> p is predicted
+a -> e is predicted
+odor -> edible is predicted
+m -> p is predicted
+y -> p is predicted
+c -> p is predicted
+f -> p is predicted
+n -> 20 Chi2=2179.486 split (3408,120,0) on values d, i, c, t, _, k, e, y, s, (, [, ', s, p, o, r, e, -, p, r, i, n, t, -, c, o, l, o, r, ', ,,  , ', b, ', ,,  , ', k, ', ,,  , ', w, ', ,,  , ', y, ', ,,  , ', h, ', ,,  , ', u, ', ,,  , ', o, ', ,,  , ', r, ', ,,  , ', n, ', ], )
+    spore-print-color -> e is predicted
+    b -> e is predicted
+    k -> e is predicted
+    w -> 22 Chi2=364.867 split (576,48,0) on values d, i, c, t, _, k, e, y, s, (, [, ', l, ', ,,  , ', p, ', ,,  , ', m, ', ,,  , ', w, ', ,,  , ', h, a, b, i, t, a, t, ', ,,  , ', d, ', ,,  , ', u, ', ,,  , ', g, ', ], )
+        l -> 3 Chi2=64.000 split (48,16,0) on values d, i, c, t, _, k, e, y, s, (, [, ', e, ', ,,  , ', p, ', ,,  , ', b, ', ,,  , ', c, a, p, -, c, o, l, o, r, ', ,,  , ', w, ', ,,  , ', y, ', ,,  , ', u, ', ,,  , ', c, ', ,,  , ', r, ', ,,  , ', g, ', ,,  , ', n, ', ], )
+            e -> e is predicted
+            p -> e is predicted
+            b -> e is predicted
+            cap-color -> e is predicted
+            w -> p is predicted
+            y -> p is predicted
+            u -> e is predicted
+            c -> e is predicted
+            r -> e is predicted
+            g -> e is predicted
+            n -> e is predicted
+        p -> e is predicted
+        m -> e is predicted
+        w -> e is predicted
+        habitat -> e is predicted
+        d -> 8 Chi2=40.000 split (8,32,0) on values d, i, c, t, _, k, e, y, s, (, [, ', g, i, l, l, -, s, i, z, e, ', ,,  , ', b, ', ,,  , ', n, ', ], )
+            gill-size -> p is predicted
+            b -> e is predicted
+            n -> p is predicted
+        u -> e is predicted
+        g -> e is predicted
+    y -> e is predicted
+    h -> e is predicted
+    u -> e is predicted
+    o -> e is predicted
+    r -> p is predicted
+    n -> e is predicted
+
+--------------- Zoo Decision Tree ---------------
+13 split (13,5,41,1,10,4,20,8) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 2, ,,  , 4, ,,  , 5, ,,  , 6, ,,  , 8, ,,  , ', l, e, g, s, ', ], )
+0 -> 12 split (13,3,3,0,4,0,0,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', f, i, n, s, ', ], )
+    0 -> 14 split (0,3,0,0,4,0,0,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', t, a, i, l, ', ], )
+        0 -> shellfish is predicted
+        1 -> reptile is predicted
+        tail -> shellfish is predicted
+    1 -> 3 split (13,0,3,0,0,0,0,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', e, g, g, s, ', ], )
+        0 -> mammal is predicted
+        1 -> fish is predicted
+        eggs -> fish is predicted
+    fins -> fish is predicted
+2 -> 4 split (0,0,7,0,0,0,20,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', m, i, l, k, ', ], )
+    0 -> bird is predicted
+    1 -> mammal is predicted
+    milk -> bird is predicted
+4 -> 4 split (0,2,31,0,1,4,0,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', m, i, l, k, ', ], )
+    0 -> 6 split (0,2,0,0,1,4,0,0) on values d, i, c, t, _, k, e, y, s, (, [, ', a, q, u, a, t, i, c, ', ,,  , 0, ,,  , 1, ], )
+        aquatic -> amphibian is predicted
+        0 -> reptile is predicted
+        1 -> 10 split (0,0,0,0,1,4,0,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', b, r, e, a, t, h, e, s, ', ], )
+            0 -> shellfish is predicted
+            1 -> amphibian is predicted
+            breathes -> amphibian is predicted
+    1 -> mammal is predicted
+    milk -> mammal is predicted
+5 -> shellfish is predicted
+6 -> 10 split (0,0,0,0,2,0,0,8) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', b, r, e, a, t, h, e, s, ', ], )
+    0 -> shellfish is predicted
+    1 -> insect is predicted
+    breathes -> insect is predicted
+8 -> shellfish is predicted
+legs -> type is predicted
+
+--------------- Pruned Zoo Decision Tree ---------------
+13 Chi2=346.122 split (13,5,41,1,10,4,20,8) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 2, ,,  , 4, ,,  , 5, ,,  , 6, ,,  , 8, ,,  , ', l, e, g, s, ', ], )
+0 -> insect is predicted
+2 -> 1 Chi2=27.000 split (0,0,7,0,0,0,20,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', h, a, i, r, ', ], )
+    0 -> bird is predicted
+    1 -> mammal is predicted
+    hair -> bird is predicted
+4 -> 1 Chi2=38.000 split (0,2,31,0,1,4,0,0) on values d, i, c, t, _, k, e, y, s, (, [, 0, ,,  , 1, ,,  , ', h, a, i, r, ', ], )
+    0 -> amphibian is predicted
+    1 -> mammal is predicted
+    hair -> mammal is predicted
+5 -> shellfish is predicted
+6 -> 6 Chi2=10.000 split (0,0,0,0,2,0,0,8) on values d, i, c, t, _, k, e, y, s, (, [, ', a, q, u, a, t, i, c, ', ,,  , 0, ,,  , 1, ], )
+    aquatic -> insect is predicted
+    0 -> insect is predicted
+    1 -> shellfish is predicted
+8 -> shellfish is predicted
+legs -> type is predicted
+
+Mean Error for Mushroom Data = 0.00012315270935960853
+Standard Dev for Mushroom Data = 0.0003894430615970994
+
+Mean Error for Zoo Data = 0.059999999999999984
+Standard Dev for Zoo Data = 0.05163977794943221
